@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 20px;
+}
+header h1{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+/* Mise en page */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Bloc formulaire */
+.formulaire {
+    background: gray;
+    padding: 70px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.formulaire h2 {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Bouton */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #1c72f3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #004ecc;
+}
+
+/* Message d'erreur */
+#error-msg {
+    color: red;
+    font-weight: bold;
+}
+#result {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid;
+    padding: 40px;
+    background-color: white;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card li {
+    background: #e8eefc;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+    margin-top: 5%;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    border-top: 0.2em solid #ccc;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 1%;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    .formulaire, .card {
+        width: 90%;
+    }
+}
